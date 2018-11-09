@@ -5,9 +5,9 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended : true}));
 app.set("view engine","ejs");
 var campgrounds =[
-    {  name:'The 2nd Shift Podcast',  image:'https://pixabay.com/get/eb32b9072ef3063ed1584d05fb1d4e97e07ee3d21cac104497f5c47da3eab4bb_340.jpg', description: 'A real cool place to be man', link: 'blah' },
-    {  name:'The Shoot Your Shot Podcast', image:'https://pixabay.com/get/eb32b9072ef3063ed1584d05fb1d4e97e07ee3d21cac104497f5c47da3eab4bb_340.jpg', description: 'cool stuff ', link: 'blah'  },
-    {  name:'The B. Inspired Podcast', image:'https://pixabay.com/get/eb32b9072ef3063ed1584d05fb1d4e97e07ee3d21cac104497f5c47da3eab4bb_340.jpg', description: 'Stay motivated and shit ', link: 'blah' }
+    {  name:'The 2nd Shift Podcast',  image:'https://cdn.pixabay.com/photo/2017/09/26/13/50/rv-2788677_960_720.jpg', description: 'A real cool place to be man', link: 'blah' },
+    {  name:'The Shoot Your Shot Podcast', image:'https://cdn.pixabay.com/photo/2017/09/26/13/50/rv-2788677_960_720.jpg', description: 'cool stuff ', link: 'blah'  },
+    {  name:'The B. Inspired Podcast', image:'https://cdn.pixabay.com/photo/2017/09/26/13/50/rv-2788677_960_720.jpg', description: 'Stay motivated and shit ', link: 'blah' }
     ];
 
 
