@@ -26,13 +26,17 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#" type="button">YelpCamp</a></li>
+        <li><a href="/landing" type="button">YelpCamp</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon"></span></a></li>
-        <li><a href="#" target="_blank">Sign Up</span></a></li>
-        <li><a href="#" target="_blank">Log In</span></a></li>
-        <li><a href="#" target="_blank">Log Out</span></a></li>
+          <% if(!currentUser){ %>
+        <li><a href="/register" target="_blank">Sign Up</span></a></li>
+        <li><a href="/login" target="_blank">Log In</span></a></li>
+       <%  } else{ %>
+        <li><a href="#"> Signed In as, <%= currentUser.username %></a></li>
+        <li><a href="/logout" target="_blank">Log Out</span></a></li>
+       <% } %>
       </ul>
     </div>
   </div>

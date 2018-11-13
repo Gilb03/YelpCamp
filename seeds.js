@@ -21,7 +21,7 @@ var data =[
 function seedDB(){ 
     //remove all camgrounds
     Campground.remove({}, function (err){
-    if(err){
+     if(err){
         console.log(err);
     } else {
     console.log("removed campgrounds!");
@@ -50,9 +50,9 @@ function seedDB(){
             }
         });
     });
-    }
+    } 
 });
 
 //add a few comments
-}
-module.exports = seedDB;
+} 
+module.exports = seedDB; 
