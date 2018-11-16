@@ -43,6 +43,7 @@ router.get( "/", function (req, res){
     // LOGOUT LOGIC 
     router.get("/logout", function(req, res){
             req.logout();
+            req.flash("success", "Logged you out");
             res.redirect("/campgrounds");
     });
     //MIDDLEWARE 
